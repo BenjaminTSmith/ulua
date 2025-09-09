@@ -1,0 +1,324 @@
+identifier: a_number
+=
+number: 123
+identifier: a_float
+=
+number: 3.14
+identifier: a_string
+=
+string: "hello"
+identifier: a_longstring
+=
+identifier: multi
+identifier: line
+identifier: string
+]
+]
+identifier: a_bool_true
+=
+keyword: true
+identifier: a_bool_false
+=
+keyword: false
+identifier: a_nil
+=
+keyword: nil
+keyword: local
+identifier: identifier_test
+=
+string: "ok"
+keyword: local
+identifier: sum
+=
+number: 1
++
+number: 2
+keyword: local
+identifier: diff
+=
+number: 5
+keyword: local
+identifier: product
+=
+number: 4
+*
+number: 6
+keyword: local
+identifier: quotient
+=
+number: 8
+/
+number: 2
+keyword: local
+identifier: mod
+=
+number: 10
+%
+number: 3
+keyword: local
+identifier: power
+=
+number: 2
+^
+number: 3
+keyword: local
+identifier: concat
+=
+string: "Lua"
+..
+string: "5.1"
+keyword: local
+identifier: len
+=
+#
+string: "string"
+keyword: local
+identifier: eq
+=
+(
+number: 1
+==
+number: 1
+)
+keyword: local
+identifier: neq
+=
+(
+number: 1
+~=
+number: 2
+)
+keyword: local
+identifier: leq
+=
+(
+number: 2
+<=
+number: 3
+)
+keyword: local
+identifier: geq
+=
+(
+number: 3
+>=
+number: 2
+)
+keyword: local
+identifier: lt
+=
+(
+number: 2
+<
+number: 3
+)
+keyword: local
+identifier: gt
+=
+(
+number: 3
+=
+number: 2
+)
+keyword: local
+identifier: and_test
+=
+keyword: true
+keyword: and
+keyword: false
+keyword: local
+identifier: or_test
+=
+keyword: false
+keyword: or
+keyword: true
+keyword: local
+identifier: not_test
+=
+keyword: not
+keyword: false
+keyword: local
+identifier: tbl
+=
+{
+number: 1
+,
+number: 2
+,
+number: 3
+;
+identifier: key
+=
+string: "value"
+,
+identifier: nested
+=
+{
+identifier: a
+=
+number: 10
+}
+}
+identifier: print
+(
+identifier: tbl
+.
+identifier: key
+)
+identifier: tbl
+:
+identifier: method_call
+(
+)
+keyword: function
+identifier: f
+(
+identifier: a
+,
+identifier: b
+,
+...
+)
+identifier: print
+(
+identifier: a
+,
+identifier: b
+,
+...
+)
+keyword: end
+identifier: f
+(
+number: 1
+,
+number: 2
+,
+number: 3
+,
+number: 4
+)
+keyword: if
+identifier: eq
+keyword: then
+identifier: print
+(
+string: "if/then/else"
+)
+keyword: elseif
+identifier: neq
+keyword: then
+identifier: print
+(
+string: "elseif branch"
+)
+keyword: else
+identifier: print
+(
+string: "else branch"
+)
+keyword: end
+keyword: local
+identifier: i
+=
+number: 0
+keyword: while
+identifier: i
+<
+number: 3
+keyword: do
+identifier: i
+=
+identifier: i
++
+number: 1
+keyword: end
+keyword: repeat
+identifier: i
+=
+identifier: i
+keyword: until
+identifier: i
+==
+number: 0
+keyword: for
+identifier: j
+=
+number: 1
+,
+number: 5
+,
+number: 2
+keyword: do
+identifier: print
+(
+identifier: j
+)
+keyword: end
+keyword: for
+identifier: k
+,
+identifier: v
+keyword: in
+identifier: pairs
+(
+identifier: tbl
+)
+keyword: do
+identifier: print
+(
+identifier: k
+,
+identifier: v
+)
+keyword: end
+keyword: function
+identifier: add
+(
+identifier: x
+,
+identifier: y
+)
+keyword: return
+identifier: x
++
+identifier: y
+keyword: end
+keyword: local
+identifier: f2
+=
+keyword: function
+(
+identifier: x
+)
+keyword: return
+identifier: x
+*
+number: 2
+keyword: end
+keyword: for
+identifier: n
+=
+number: 1
+,
+number: 10
+keyword: do
+keyword: if
+identifier: n
+==
+number: 3
+keyword: then
+keyword: break
+keyword: end
+keyword: end
+keyword: do
+keyword: local
+identifier: scoped
+=
+string: "inside do block"
+identifier: print
+(
+identifier: scoped
+)
+keyword: end
+end of file
